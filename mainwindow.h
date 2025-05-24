@@ -16,8 +16,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void randNumbers();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
+    int number1;
+    int number2;
+
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
